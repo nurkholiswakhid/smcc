@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.modal-backdrop {
+    display: none !important;
+}
+
+/* Mengatur posisi modal-dialog agar lebih turun */
+.modal-dialog {
+    margin-top: 100px; /* Sesuaikan nilai ini sesuai kebutuhan Anda */
+}
+
+
+.photo-container {
+    width: 100%;              
+    padding-top: 56.25%;      
+    position: relative;       
+    overflow: hidden;         
+    border-radius: 8px;       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.photo-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        
+}
+
+/* button */
+.btn-danger{
+    background-color: #BD0001 ;
+    border-radius: 15px ;
+    border-color: #bd0001;
+    padding: 10px 45px;
+    color: white;
+}
+
+.btn-outline-danger{
+    background-color: transparent ;
+    border-radius: 15px ;
+    border-color: #bd0001;
+    padding: 10px 45px;
+    color: #BD0001;
+}
+
+.btn-outline-white{
+    background-color: transparent ;
+    border-radius: 15px ;
+    border-color: #ffffff;
+    padding: 10px 45px;
+    color: #ffffff;
+}
+
+
+/* Navbar */
+.nav-item .nav-link{
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.scroll-nav-active{
+    background-color: white;
+    /*border-bottom: 1px solid #bd0001;*/
+    box-shadow: 1px 1px 11px -1px rgba(1,  1,  1, 0.08);
+
+}
+
+.text-nav-active{
+    color: black;
+}
+#hero {
+    position: relative;
+    height: 600px;
+    overflow: hidden; /* Ensures no overflow issues */
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assest/images/il-photo-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); /* Darkens the background */
+    z-index: 1; /* Places background behind the text */
+}
+
+.container {
+    position: relative;
+    z-index: 2; /* Ensures text is above the background */
+}
+
+.hero-title {
+    color: #ffffff; /* Ensures text is always white */
+    padding-top: 200px;
+}
+
+
+/* Responsive layar kecil 450px */
+@media screen and (min-width: 450px){
+    .hero-text{
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
+/* Responsive layar kecil 550px */
+@media screen and (min-width: 550px){
+    .hero-text{
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
+/* Responsive layar kecil 800px*/ 
+@media screen and (min-width: 800px){
+    .hero-text{
+        font-size: 65px;
+        font-weight: 600;
+    }
+}
+
+.stripe{
+    height: 5px;
+    width: 40px;
+    background-color: #bd0001;
+}
+
+#video {
+    background-image: url("../../assest/images/background4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+/* foto */
+/* parallax Background */
+.section-foto{
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parallax{
+    background-image: url("../../assest/images/unesa.png");
+}
+
+.stripe-putih{
+    height: 5px;
+    width: 40px;
+    background-color: #ffffff;
+}
+
