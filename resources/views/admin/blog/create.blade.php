@@ -1,9 +1,9 @@
-@extends('layouts.layouts')
+@extends('layouts.admin')
 
 @section('content')
 
 
-    <section class="py-5" style="margin-top: 100px">
+    <section class="py-5" >
         <div class="container col-xxl-8">
             {{-- Navigasi --}}
             <div class="d-flex mb-3">

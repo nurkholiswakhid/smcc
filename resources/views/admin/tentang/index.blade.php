@@ -1,7 +1,7 @@
-@extends('layouts.layouts') <!-- Menggunakan layout admin -->
+@extends('layouts.admin') <!-- Menggunakan layout admin -->
 
 @section('content')
-<div class="container" style="margin-top: 100px;">
+<div class="container py-5" >
     <h2 class="fw-bold text-center mb-4">Kelola Profil SMCC</h2>
 
     {{-- Kelola Profil --}}

@@ -16,14 +16,8 @@
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="{{ asset('assest/css/magnific.css') }}">
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="{{ asset('assest/css/style.css') }}">
-
-    <!-- Summernote CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
     <style>
         /* Menangani overflow horizontal */
@@ -130,9 +124,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="{{ asset('assest/js/magnific.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
     <script>
         const navbar = document.querySelector(".navbar");
@@ -184,62 +175,6 @@
 
         // AOS Animation
         AOS.init();
-
-        // Magnific Popup
-        $(document).ready(function() {
-            $('.image-link').magnificPopup({ type: 'image' });
-
-            // Summernote Initialization
-            $('#summernote').summernote({
-                height: 200,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen', 'codeview', 'help']],
-                ],
-                callbacks: {
-        onImageUpload: function(files) {
-            // Menutup modal saat gambar diupload
-            $('.modal-backdrop').remove();
-        }
-    }
-            });
-            $('#vision').summernote({
-                height: 200,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen', 'codeview', 'help']],
-                ],
-                callbacks: {
-        onImageUpload: function(files) {
-            // Menutup modal saat gambar diupload
-            $('.modal-backdrop').remove();
-        }
-    }
-            });
-
-            $('#mission').summernote({
-                height: 200,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen', 'codeview', 'help']],
-                ],
-                callbacks: {
-        onImageUpload: function(files) {
-            // Menutup modal saat gambar diupload
-            $('.modal-backdrop').remove();
-        }
-    }
-            });
-        });
     </script>
 </body>
 </html>

@@ -1,16 +1,16 @@
-@extends('layouts.layouts')
+@extends('layouts.admin')
 
 @section('content')
 
-<section id="manage-video" class="py-5" style="margin-top: 100px">
+<section id="manage-video" class="py-5" >
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center">
       <h2 class="fw-bold">Pengelolaan Video</h2>
       <p>Tambahkan, edit, atau hapus video dari galeri Anda.</p>
     </div>
     
     <!-- Tombol Tambah Video Baru -->
-    <div class="row justify-content-center mb-5">
+    <div class="row justify-content-center ">
       <div class="col-lg-6 text-center">
         <a href="{{ route('add_video.create') }}" class="btn btn-primary">Tambah Video Baru</a>
       </div>

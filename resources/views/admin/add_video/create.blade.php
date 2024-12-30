@@ -1,8 +1,8 @@
-@extends('layouts.layouts')
+@extends('layouts.admin')
 
 @section('content')
 
-<section id="add-video" class="py-5" style="margin-top: 100px">
+<section id="add-video" class="py-5" >
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="fw-bold">Tambah Video Baru</h2>

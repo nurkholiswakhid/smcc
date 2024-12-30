@@ -1,8 +1,8 @@
-@extends('layouts.layouts')
+@extends('layouts.admin')
 
 @section('content')
-    <section style="margin-top: 100px">
-        <div class="container col-xxl-8 py-5">
+    <section style="py-5">
+        <div class="container col-xxl-8 ">
             <h3 class="fw-bold mb-3">Halaman Admin</h3>
             <p>Selamat datang di halaman Admin</p>
 

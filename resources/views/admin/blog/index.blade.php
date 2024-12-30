@@ -1,8 +1,8 @@
-@extends('layouts.layouts')
+@extends('layouts.admin')
 
 @section('content')
-    <section class="py-5" style="margin-top: 100px">
-        <div class="container col-xxl-8">
+    <section class="container py-5" >
+        <div class="container ">
            
             <h4>Halaman Blog</h4>
            
