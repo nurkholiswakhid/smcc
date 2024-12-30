@@ -34,7 +34,7 @@
                         <tr>
                             <td>{{ $no++ }}</td>
                             <td>
-                                <img src="{{ asset('storage/artikel/'.$artikel->image) }}" height="100" alt="{{ $artikel->judul }}">
+                                <img src="{{ asset('storage/artikel/'.$artikel->image) }}" height="100" alt="{{ $artikel->judul }}" style="width: 100px; height: auto;">
                             </td>
                             <td>
                                 {{ $artikel->judul }}

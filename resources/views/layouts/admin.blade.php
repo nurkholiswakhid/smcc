@@ -10,11 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        /* Adjust body to ensure content does not overlap with navbar */
+        /* Adjust body to ensure content does not overlap with navbar and prevent horizontal scroll */
         body {
             margin: 0;
             padding: 0;
             height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
         /* Sidebar adjustments */
