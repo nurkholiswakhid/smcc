@@ -93,17 +93,12 @@
             <div class="d-flex">
                 @auth
                     <!-- Navbar for authenticated users -->
-                    <a href="/dashboard" class="btn btn-primary me-2">Dashboard</a>
+                    <a href="/" class="btn btn-primary me-2">Home</a>
                     <form action="/logout" method="POST">
                         @csrf
                         <button type="submit" class="btn btn-dark">Logout</button>
                     </form>
-                @else
-                    <!-- Navbar for guests (not logged in) -->
-                    <a href="https://api.whatsapp.com/send/?phone=6285777726035&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawHZ1vhleHRuA2FlbQIxMAABprJ9_AGFSBVO8xB5_yEaC9yvBdXGH1jDJ4V2Q1wyjlK9WG8RWDpvplNmEA_aem_OlBmy5yBUOx4kDuKkwW6nw"
-                        class="btn btn-warning">
-                        <i class="fas fa-phone-alt me-2"></i> Call Center
-                    </a>
+                
                 @endauth
             </div>
         </div>
