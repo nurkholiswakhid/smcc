@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         /* Adjust body to ensure content does not overlap with navbar */
         body {
@@ -50,13 +51,14 @@
             margin: 0;
             font-size: 1.25rem;
             color: #343a40;
+            font-weight: bold;
         }
 
         /* Adjust navbar to fill the entire width */
         .navbar {
             width: 100%;
-            padding-left: 50px; /* Add 50px padding on the left */
-            padding-right: 50px; /* Add 50px padding on the right */
+            padding-left: 25px; /* Add 50px padding on the left */
+            padding-right: 25px; /* Add 50px padding on the right */
             z-index: 10; /* Ensure the navbar is above the sidebar */
         }
 
@@ -74,7 +76,7 @@
     <nav class="navbar navbar-expand-lg py-3 fixed-top bg-light shadow">
         <a class="navbar-brand" href="#">
             <img src="{{ asset('assest/icons/smcc.png') }}" alt="Logo">
-            <h4>Admin Panel</h4>
+            <h4>SMCC Admin Panel</h4>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -111,19 +113,29 @@
         <div class="sidebar">
             <ul class="nav flex-column px-3">
                 <li class="nav-item">
-                    <a href="{{ route('dashboard') }}" class="nav-link text-white">Dashboard</a>
+                    <a href="{{ route('dashboard') }}" class="nav-link text-white">
+                        <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('blog') }}" class="nav-link text-white">Kelola Blog Artikel</a>
+                    <a href="{{ route('blog') }}" class="nav-link text-white">
+                        <i class="fas fa-newspaper me-2"></i> Kelola Blog Artikel
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('photo') }}" class="nav-link text-white">Kelola foto</a>
+                    <a href="{{ route('photo') }}" class="nav-link text-white">
+                        <i class="fas fa-camera-retro me-2"></i> Kelola Foto
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('tentang') }}" class="nav-link text-white">Kelola Profil</a>
+                    <a href="{{ route('tentang') }}" class="nav-link text-white">
+                        <i class="fas fa-users me-2"></i> Kelola Profil
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('add_video') }}" class="nav-link text-white">Kelola video</a>
+                    <a href="{{ route('add_video') }}" class="nav-link text-white">
+                        <i class="fas fa-video me-2"></i> Kelola Video
+                    </a>
                 </li>
             </ul>
         </div>
